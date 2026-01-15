@@ -57,9 +57,6 @@ python flight_sim.py
 
 ```
 
-**Seçenek 2: EXE Olarak Çalıştırma**
-Eğer Python kurulu değilse, `dist` klasörü içindeki `ArdaFlightSim.exe` dosyasını çalıştırarak simülasyonu doğrudan başlatabilirsiniz.
-
 ## 📝 Not
 
 Bu proje eğitim ve hobi amaçlı geliştirilmiştir. Kullanılan fizik motoru ve sensör gürültüleri, gerçek dünyadaki IMU sensörlerini taklit etmek üzere sentetik olarak (rastgele) üretilmiştir.
