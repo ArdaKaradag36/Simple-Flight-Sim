@@ -30,8 +30,16 @@ Bu projeyi geliştirirken şu teknolojilerden faydalandım:
 ### 1. Güvenli Uçuş Modu
 Pilotun tam kontrole sahip olduğu, verilerin temiz aktığı durum. Turuncu kutu (veya uçak modeli) pilotun komutlarına uyar.
 
-### 2. Otopilot Müdahalesi (Stall Uyarısı)
-Pilot uçağı tehlikeli bir açıya (örn: >30 derece Pitch) getirdiğinde sistem **KIRMIZI** alarma geçer, kontrolü kilitler ve "BURNU EZİYOR" uyarısı vererek uçağı düzeltir.
+![Güvenli Uçuş](assets/1.png)
+
+### 2. Otopilot Müdahalesi (Stall Uyarısı - Pitch)
+Pilot uçağı tehlikeli bir açıya (örn: >30 derece Pitch) getirdiğinde sistem **KIRMIZI** alarma geçer, kontrolü kilitler ve "BURNU EZİYOR/KALDIRIYOR" uyarısı vererek uçağı düzeltir.
+
+![Stall Uyarısı](assets/2.png)
+
+### 3. Otopilot Müdahalesi (Kanat Düzeltme - Roll)
+Uçak kanatları aşırı yattığında (örn: >45 derece) sistem devreye girer ve "KANATLAR DÜZELTİLİYOR" uyarısı vererek uçağı yatay konuma getirir.
+![Roll Düzeltme](assets/3.png)
 
 ## 💿 Nasıl Çalıştırılır?
 
@@ -58,4 +66,3 @@ Bu proje eğitim ve hobi amaçlı geliştirilmiştir. Kullanılan fizik motoru v
 
 **Geliştirici:** Arda Karadağ | Bilgisayar Programcılığı Öğrencisi
 
-```

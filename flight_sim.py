@@ -60,15 +60,19 @@ def update():
         ucak.color = color.red
         durum_paneli.text = f"DURUM: KİLİTLENDİ\nAI Yavaşça Düzeltiyor..."
         
+        # Düzeltme Hızı: 0.02
         hedef_pitch = lerp(hedef_pitch, 0, 0.02) 
         hedef_roll = lerp(hedef_roll, 0, 0.02)
 
-        # UYARI MESAJLARI
+        # [DÜZELTME BURADA]: Mantığı ters çevirdik.
+        # Eğer temiz_pitch > 0 ise (Pozitif), uçak dalışta demektir -> "BURNU KALDIR" demeli.
+        # Eğer temiz_pitch < 0 ise (Negatif), uçak tırmanışta demektir -> "BURNU EZ" demeli.
+        
         if son_tehlike_tipi == 1: # Pitch Hatası
             if temiz_pitch > 0: 
-                uyari_yazisi.text = "OTOPİLOT: BURNU EZİYOR (Aşağı İtiyor)..."
-            else: 
                 uyari_yazisi.text = "OTOPİLOT: BURNU KALDIRIYOR (Yukarı Çekiyor)..."
+            else: 
+                uyari_yazisi.text = "OTOPİLOT: BURNU EZİYOR (Aşağı İtiyor)..."
         
         elif son_tehlike_tipi == 2: # Roll Hatası
             uyari_yazisi.text = "OTOPİLOT: KANATLAR DÜZELTİLİYOR..."
