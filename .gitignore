@@ -1,0 +1,19 @@
+# Python Derleme Dosyaları
+__pycache__/
+*.py[cod]
+
+# Sanal Ortam (Virtual Environment)
+venv/
+env/
+
+# VS Code Ayarları
+.vscode/
+
+# PyInstaller Çıktıları (EXE oluştururken çıkanlar)
+build/
+dist/
+*.spec
+
+# Diğer Gereksizler
+*.log
+.DS_Store
